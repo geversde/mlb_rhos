@@ -6,7 +6,7 @@ lnk = 'https://raw.githubusercontent.com/geversde/python-github-action-template/
 server = app.server
 
 def serve_layout():
-    return dash_table.DataTable(data = pd.read_csv(lnk).to_dict("records"),page_size=15)
+    return dash_table.DataTable(data = pd.read_csv(lnk).to_dict("records"),page_size=20)
 
 app.layout = serve_layout
 
